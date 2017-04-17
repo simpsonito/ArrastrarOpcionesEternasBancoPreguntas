@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body{
+    font-family:"Helvetica", Arial, sans-serif;
+    font-size:12px;
+    text-align:left;
+    margin: 0;
+}
+div.destino{
+    padding: 10px;
+    margin:1em;
+}
+.parrafo{
+    line-height: 1.3em;
+    text-align:left;
+}
+.subtitulo_01 {	font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999;
+    text-align:left;
+}
+.titulo_01 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #cf886c;
+    text-align:left;
+}
+/* Estilo para los botones */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    clear: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: #3391f5;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #666;
+}
+button:hover,
+html input:hover[type="button"], /* 1 */
+input:hover[type="reset"],
+input:hover[type="submit"] {
+    color: rgba(8, 84, 135, .9);
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #999;
+
+    transition: 		color 500ms ease, background-color 500ms ease;
+    -webkit-transition: color 500ms ease, background-color 500ms ease;
+}
+@media (max-width: 480px) {
+    div#barraFija{
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid #777;
+        padding-bottom: 0.5em;
+    }
+    div#barraFija p{
+        margin:0.3em;
+    }
+    div.destino{
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+}

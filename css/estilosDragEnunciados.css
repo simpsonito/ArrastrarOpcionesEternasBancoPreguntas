@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*
+body{
+    font-family:"Helvetica", Arial, sans-serif;
+    font-size:0.9em;
+    text-align:center;
+    margin:0;
+}
+*/
+h1{
+    margin: 0.5em 0.1em;
+}
+div#barraFija{
+
+}
+#mensajes{
+    background-color: #4673d7;
+    color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.destino{
+    line-height: 1.5em;
+    text-align: center;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    transition-duration: 1.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+}
+.destino.destruido{
+    -moz-transform: scaleY(0.1) translateY(400px);
+    -webkit-transform: scaleY(0.1) translateY(400px);
+    transform:scaleY(0.1) translateY(400px);
+}
+.numero{
+    display: inline-block;
+    margin: 0;
+}
+.DropTarget{
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    transition-duration: 1.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+}
+.destruido .DropTarget{
+    -moz-transform: scaleY(0.1) translateY(400px);
+    -webkit-transform: scaleY(0.1) translateY(400px);
+    transform:scaleY(0.1) translateY(400px);
+}
+.Dragable{
+    cursor: move;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: auto;
+    /*height: 2em;*/
+    margin: 0;
+    padding: 3px;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,200);
+    background-color:#FFF;
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 180px;
+}
+.Indragable{
+    font-weight: bold;
+    margin: 0;
+    display:inline-block;
+}
+
+.DropTarget{
+    min-width: 10em;
+    min-height: 2.5em;
+    background-color: #CEF;
+    border: 1px dashed  #0580ff;
+    overflow:visible;
+    margin: 2px auto;
+    border-radius: 5px;
+    max-width: 500px;
+}
+.DropTargetResuelto{
+    min-width: 10em;
+    min-height: 2.5em;
+    background-color: #dfdfdf;
+    border: 1px solid  #AAA;
+    overflow:visible;
+    margin: 2px auto;
+    border-radius: 5px;
+    max-width: 500px;
+}
+.DropTargetResuelto .Dragable{
+    height:auto;
+    background:none;
+    overflow:visible;
+    border:none;
+    display:inline-block;
+    vertical-align:middle;
+    box-shadow: none;
+}
+.bien{
+    background-image: url('palomita.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 16px;/* ancho de la imagen más un poco */
+    background-color: rgba(0,255,0,0.25);
+}
+.mal{
+    background-image: url('tache.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 16px;/* ancho de la imagen más un poco */
+    opacity: 0.75;
+    background-color: rgba(255,0,0,0.25);
+}
+#respuestas{
+    text-align: center;
+}
